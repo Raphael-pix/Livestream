@@ -46,15 +46,15 @@ const ResultCard = async ({ data }: ResultCardProps) => {
             <UserIcon type={data?.type || "female"} />
           </div>
         </div>
-        <div className="flex flex-col mx-2 py-1">
+        <div className="flex flex-col mx-2 py-[2px]">
           <p className="text-xs text-n-1 leading-4">
             {data?.goalText}
           </p>
         </div>
         <div className="flex flex-col mx-2">
-          <div className="flex flex-wrap gap-2 mx-2 max-h-10 overflow-hidden truncate">
+          <div className="flex flex-wrap gap-2 mx-2 max-h-8 overflow-hidden truncate">
             {data?.tags?.map((item) => (
-              <p key={item} className="text-[11px] text-primary-2 leading-4">
+              <p key={item} className="text-[11px] text-primary-2 leading-2">
                 {`#${item}`}
               </p>
             ))}
